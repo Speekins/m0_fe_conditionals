@@ -22,25 +22,31 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 
 // YOU DO: log the result of the comparison: is numberTeachers less than numberStudents?
 // this should log: true
+console.log("Is numberTeachers less than numberStudents?", numberTeachers < numberStudents);
 
 // YOU DO: log the result of the comparison: is numberTeachers strictly equal to stringTeachers?
 // this should log: false
+console.log("is numberTeachers equal to stringTeachers?", numberTeachers === stringTeachers);
 
 // YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
 // this should log: true
+console.log("is numberTeachers equal to stringTeachers?", numberStudents !== numberTeachers);
 
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 20?
 // this should log: true
+console.log("is numberTeachers equal to stringTeachers?", numberStudents >= 20);
 
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
 // this should log: false
+console.log("is numberTeachers equal to stringTeachers?", numberStudents >= 21);
 
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 20?
 // this should log: true
+console.log("is numberTeachers equal to stringTeachers?", numberStudents <= 20);
 
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 21?
 // this should log: true
-
+console.log("is numberTeachers equal to stringTeachers?", numberStudents <= 21);
 
 // #-------------------
 // PART 2: Articulating what you are doing
@@ -53,21 +59,24 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 
 console.log(4 < 9);
 // YOU DO: Explain.
+//This console.log() statement will log if 4 is less than 9 using the less than comparison operator.
 
 var books = 3;
 console.log(4 < books);
 // YOU DO: Explain.
+//A variable named `books` is declared and assign the number 3. This console.log() statement will log if 4 is less than the value assigned to `books`.
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
 // YOU DO: Explain.
+//This console.log() statement will log if the value assigned to `friends` is greater than the value assigned to `siblings`.
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees != meals);
 // YOU DO: Explain.
-
+//This console.log() statement will log if the value assigned to `attendees` is equa to the value assigned to `meals`.
 
 // #-------------------
 // PART 3: Logical Operators
@@ -89,15 +98,18 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+console.log(lovesToPlay && lovesTreats);
 
 // Determine if the dog loves to play and loves the dog park
-
+console.log(lovesToPlay && lovesDogPark);
 
 // Determine if the dog loves to play or loves the dog park
-
+console.log(lovesToPlay || lovesDogPark);
 
 // Determine if the dog loves to play and is a puppy
+console.log(lovesToPlay && isPuppy);
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
 // ANSWER:
+//Final line of code raises a reference error because `isPuppy` is not defined and 
+//therefore the program has nothing to reference to for that name.

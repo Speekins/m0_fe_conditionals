@@ -11,7 +11,8 @@
   // if it is snowy, print "coat"
   // if it is icy, print "yak traks"
 
-weather = "sunny"
+//weather = "sunny"
+weather = "icy" //returns "yak traks" instead of "sunscreen".
 
 if (weather === "sunny") {
   console.log("sunscreen");
@@ -44,8 +45,9 @@ if (weather === "sunny") {
 
 numQuarters = 0
 
-console.log("I have enough money for a gumball");
-console.log("I don't have enough money for a gumball");
+if (numQuarters < 2) {
+  console.log("I don't have enough money for a gumball")
+} else { console.log("I have enough money for a gumball!") }
 
 
 // #####################
@@ -64,4 +66,8 @@ console.log("I don't have enough money for a gumball");
 
 var cupsOfFlour = 1;
 var hasSauce = true;
+
+if (cupsOfFlour > 1 && hasSauce === true) {
+  console.log("I can make a pizza!")
+} else { console.log("I cannot make a pizza") }
 
